@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RN Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header_ele" id="search">
+                <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>magnify</title><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+                <input type="text" value="search">
+            </div>
+            <div class="header_ele" id="actions">
+                <svg id="mess" class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>message-badge-outline</title><path d="M22 7V16C22 17.1 21.1 18 20 18H6L2 22V4C2 2.9 2.9 2 4 2H14.1C14 2.3 14 2.7 14 3S14 3.7 14.1 4H4V16H20V7.9C20.7 7.8 21.4 7.4 22 7M16 3C16 4.7 17.3 6 19 6S22 4.7 22 3 20.7 0 19 0 16 1.3 16 3Z" /></svg>
+                <svg id="alert" class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-outline</title><path d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z" /></svg>
+                <svg id="steth" class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>stethoscope</title><path d="M19,8C19.56,8 20,8.43 20,9A1,1 0 0,1 19,10C18.43,10 18,9.55 18,9C18,8.43 18.43,8 19,8M2,2V11C2,13.96 4.19,16.5 7.14,16.91C7.76,19.92 10.42,22 13.5,22A6.5,6.5 0 0,0 20,15.5V11.81C21.16,11.39 22,10.29 22,9A3,3 0 0,0 19,6A3,3 0 0,0 16,9C16,10.29 16.84,11.4 18,11.81V15.41C18,17.91 16,19.91 13.5,19.91C11.5,19.91 9.82,18.7 9.22,16.9C12,16.3 14,13.8 14,11V2H10V5H12V11A4,4 0 0,1 8,15A4,4 0 0,1 4,11V5H6V2H2Z" /></svg>
+                <span>Lilly Jones, RN BSN</span>
+            </div>
+            <div class="header_ele" id="profile">
+                <svg id="steth" class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>stethoscope</title><path d="M19,8C19.56,8 20,8.43 20,9A1,1 0 0,1 19,10C18.43,10 18,9.55 18,9C18,8.43 18.43,8 19,8M2,2V11C2,13.96 4.19,16.5 7.14,16.91C7.76,19.92 10.42,22 13.5,22A6.5,6.5 0 0,0 20,15.5V11.81C21.16,11.39 22,10.29 22,9A3,3 0 0,0 19,6A3,3 0 0,0 16,9C16,10.29 16.84,11.4 18,11.81V15.41C18,17.91 16,19.91 13.5,19.91C11.5,19.91 9.82,18.7 9.22,16.9C12,16.3 14,13.8 14,11V2H10V5H12V11A4,4 0 0,1 8,15A4,4 0 0,1 4,11V5H6V2H2Z" /></svg>
+                <p id="usr">Lilly Jones, RN BSN</p>
+            </div>
+            <div class="header_ele" id="buttons">
+                <button>Assign</button>
+                <button>Transfer</button>
+                <button>Discharge</button>
+                <button>Unit</button>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar_ele">
+                <div class="icon_ele">
+                <svg id="dash" class="large_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>view-dashboard-outline</title><path d="M19,5V7H15V5H19M9,5V11H5V5H9M19,13V19H15V13H19M9,17V19H5V17H9M21,3H13V9H21V3M11,3H3V13H11V3M21,11H13V21H21V11M11,15H3V21H11V15Z" /></svg>
+                <span id="dashboard">Dashboard</span>
+                </div>
+            </div>
+            <div class="sidebar_ele">
+                <ul id="sidebar_menu">
+                    <li class="menu_item">
+                        <div class="icon_ele">
+                            <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>Home
+                        </div>
+                    </li>
+                    <li class="menu_item">
+                        <div class="icon_ele">
+                            <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>Profile
+                        </div>
+                    </li>
+                    <li class="menu_item">
+                        <div class="icon_ele">
+                            <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>message-badge-outline</title><path d="M22 7V16C22 17.1 21.1 18 20 18H6L2 22V4C2 2.9 2.9 2 4 2H14.1C14 2.3 14 2.7 14 3S14 3.7 14.1 4H4V16H20V7.9C20.7 7.8 21.4 7.4 22 7M16 3C16 4.7 17.3 6 19 6S22 4.7 22 3 20.7 0 19 0 16 1.3 16 3Z" /></svg>Messages
+                        </div>
+                    </li>
+                    <li class="menu_item">
+                        <div class="icon_ele">
+                            <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>check-bold</title><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" /></svg>Tasks
+                        </div>
+                    </li>
+                    <li class="menu_item">
+                        <div class="icon_ele">
+                            <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bed-empty</title><path d="M19,7H5V14H3V5H1V20H3V17H21V20H23V11A4,4 0 0,0 19,7" /></svg>Unit
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar_ele">
+                <div class="icon_ele">
+                    <svg id="settings" class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cogs</title><path d="M15.9,18.45C17.25,18.45 18.35,17.35 18.35,16C18.35,14.65 17.25,13.55 15.9,13.55C14.54,13.55 13.45,14.65 13.45,16C13.45,17.35 14.54,18.45 15.9,18.45M21.1,16.68L22.58,17.84C22.71,17.95 22.75,18.13 22.66,18.29L21.26,20.71C21.17,20.86 21,20.92 20.83,20.86L19.09,20.16C18.73,20.44 18.33,20.67 17.91,20.85L17.64,22.7C17.62,22.87 17.47,23 17.3,23H14.5C14.32,23 14.18,22.87 14.15,22.7L13.89,20.85C13.46,20.67 13.07,20.44 12.71,20.16L10.96,20.86C10.81,20.92 10.62,20.86 10.54,20.71L9.14,18.29C9.05,18.13 9.09,17.95 9.22,17.84L10.7,16.68L10.65,16L10.7,15.31L9.22,14.16C9.09,14.05 9.05,13.86 9.14,13.71L10.54,11.29C10.62,11.13 10.81,11.07 10.96,11.13L12.71,11.84C13.07,11.56 13.46,11.32 13.89,11.15L14.15,9.29C14.18,9.13 14.32,9 14.5,9H17.3C17.47,9 17.62,9.13 17.64,9.29L17.91,11.15C18.33,11.32 18.73,11.56 19.09,11.84L20.83,11.13C21,11.07 21.17,11.13 21.26,11.29L22.66,13.71C22.75,13.86 22.71,14.05 22.58,14.16L21.1,15.31L21.15,16L21.1,16.68M6.69,8.07C7.56,8.07 8.26,7.37 8.26,6.5C8.26,5.63 7.56,4.92 6.69,4.92A1.58,1.58 0 0,0 5.11,6.5C5.11,7.37 5.82,8.07 6.69,8.07M10.03,6.94L11,7.68C11.07,7.75 11.09,7.87 11.03,7.97L10.13,9.53C10.08,9.63 9.96,9.67 9.86,9.63L8.74,9.18L8,9.62L7.81,10.81C7.79,10.92 7.7,11 7.59,11H5.79C5.67,11 5.58,10.92 5.56,10.81L5.4,9.62L4.64,9.18L3.5,9.63C3.41,9.67 3.3,9.63 3.24,9.53L2.34,7.97C2.28,7.87 2.31,7.75 2.39,7.68L3.34,6.94L3.31,6.5L3.34,6.06L2.39,5.32C2.31,5.25 2.28,5.13 2.34,5.03L3.24,3.47C3.3,3.37 3.41,3.33 3.5,3.37L4.63,3.82L5.4,3.38L5.56,2.19C5.58,2.08 5.67,2 5.79,2H7.59C7.7,2 7.79,2.08 7.81,2.19L8,3.38L8.74,3.82L9.86,3.37C9.96,3.33 10.08,3.37 10.13,3.47L11.03,5.03C11.09,5.13 11.07,5.25 11,5.32L10.03,6.06L10.06,6.5L10.03,6.94Z" /></svg>
+                    <span>Settings</span>
+                </div>
+                <div class="icon_ele">
+                    <svg id="help" class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>help-circle-outline</title><path d="M11,18H13V16H11V18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6Z" /></svg>
+                    <span>Help</span>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div id="pts" class="main_ele">
+                <div class="pts_ele">
+                    <h3>Bob: 000001 Room 6</h3>
+                    <p>Age: 67</p>
+                    <p>Hypotension</p>
+                </div>
+                <div class="pts_ele">
+                    <h3>Joe: 000030 Room 21</h3>
+                    <p>Age: 54</p>
+                    <p>Heart Failure</p>
+                </div>
+                <div class="pts_ele">
+                    <h3>Jill: 000221 Room 15</h3>
+                    <p>Age: 30</p>
+                    <p>DKA</p>
+                </div>
+                <div class="pts_ele">
+                    <h3>Jess: 234552 Room 2</h3>
+                    <p>Age: 45</p>
+                    <p>Pancreatitis</p>
+                </div>
+                <div class="pts_ele">
+                    <h3>Nick: 234401 Room 23</h3>
+                    <p>Age: 65</p>
+                    <p>Liver Failure</p>
+                </div>
+                <div class="pts_ele">
+                    <h3>Betsy: 0030021 Room 9</h3>
+                    <p>Age: 67</p>
+                    <p>Fever</p>
+                </div>
+            </div>
+            <div id="tasks" class="main_ele">
+                <h3>Tasks</h3>
+                <ul>
+                    <li>0900 Medications for alll patients</li>
+                    <li>1200 Antibiotics room 9</li>
+                    <li>1400 Wound Care room 15</li>
+                    <li>1500 CT scan room 23</li>
+                    <li>1700 d/c room 21 pending EKG</li>
+                    <li>1800 Educate room 2</li>
+                    <li>1830 Final checks before report</li>
+                </ul>
+            </div>
+            <div id="messages" class="main_ele">
+                <h3>Messages</h3>
+                <div class="messages">Floor Manager...</div>
+                <div class="messages">Dr. Dave...</div>
+                <div class="messages">Dr. Julia...</div>
+                <div class="messages">Bailey RN ... </div>
+                <div class="messages">DPT Joe...</div>
+            </div>
+        </div>
+        <div class="foot">
+            Created by Shannon Feeley
+        </div>
+    </div>
+</body>
+</html>

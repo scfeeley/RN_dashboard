@@ -1,0 +1,116 @@
+body{
+    margin:0;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 150px 1fr;
+}
+.header{
+    grid-column: 2/3;
+    background-color: #cffafe ;
+    padding: 10px;
+    gap:10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+#usr{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+input{
+    width: 300px;
+}
+.header_ele {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.icons{
+    height: 30px;
+}
+#actions, #buttons{
+    justify-self: end;
+    align-self: center;
+}
+#steth{
+    background-color: pink;
+    border-radius: 50%;
+    padding: 10px;
+}
+button{
+    background-color:#0891b2;
+    color:#cffafe;
+}
+.sidebar{
+    background-color: #0891b2;
+    color: #cffafe;
+    grid-row: 1/3;
+    display: grid;
+    padding: 15px;
+}
+.icon_ele, menu_item{
+   display: flex;
+   align-items: center;
+   gap:5px;
+   padding: 10px;
+}
+.large_icons{
+    height: 50px;
+}
+#sidebar_menu {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+.pts_ele{
+    height:150px;
+    background-color:white;
+    padding: 10px;
+    border: 2px solid black;
+}
+#pts{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap:15px;
+    grid-row:1/3;
+}.pts_ele:hover{
+    border:4px solid black;
+}
+.main{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #ecfeff;
+    padding: 15px;
+    gap:10px;
+}
+h3{
+    color: #0891b2;
+}
+#tasks, #messages{
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+
+}
+#tasks:hover, #messages:hover{
+    border: 4px black solid;
+}
+#dashboard{
+    font-size: 2em;
+    font-weight: bolds;
+}
+.foot{
+    background-color: #155e75;
+    grid-column: 1/3;
+    font-size: 0.5em;
+    color:white;
+    height: 50px;
+    text-align: center;
+    padding:20px;
+}
